@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Quando');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+  background-color: rgba(15, 15, 15, 1);
+  font-family: "Josefin Sans";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 20px;
+  font-family: "Shadows Into Light";
+  color: white;
+}
+
+p {
+  color: grey;
+}
+
+img {
+  height: 100% !important;
+  overflow-x: auto;
+  /* pointer-events: none; */
+}
+
+.photo-cred a {
+  color: white;
+  text-decoration: underline;
+}
+
+.bg-dark {
+  background-color: #1f2327 !important;
+}
+
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#logo {
+  height: auto;
+  width: 200px !important;
+}
+
+.imgrow {
+  display: inline-block;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+#top-img-row {
+  margin-top: 20px;
+}
+
+.imgrow-sm {
+  height: 11em;
+}
+
+.imgrow-md {
+  height: 12em;
+}
+
+.imgrow-lg {
+  height: 15em;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .imgrow-sm {
+    height: 13em;
+  }
+
+  .imgrow-md {
+    height: 15em;
+  }
+
+  .imgrow-lg {
+    height: 23em;
+  }
+
+  .imgrow {
+    margin-top: 5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .imgrow-sm {
+    height: 15em;
+  }
+
+  .imgrow-md {
+    height: 20em;
+  }
+
+  .imgrow-lg {
+    height: 30em;
+  }
+
+  .imgrow {
+    margin-top: 5px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .imgrow-sm {
+    height: 15em;
+  }
+
+  .imgrow-md {
+    height: 20em;
+  }
+
+  .imgrow-lg {
+    height: 30em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .imgrow-sm {
+    height: 15em;
+  }
+
+  .imgrow-md {
+    height: 20em;
+  }
+
+  .imgrow-lg {
+    height: 35em;
+  }
+}
+
+.fade-on-left {
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 1), rgba(15, 15, 15, 0));
+  height: inherit;
+  width: 10%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.fade-on-right {
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 0), rgba(15, 15, 15, 1));
+  height: inherit;
+  width: 10%;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.photo-cat {
+  position: absolute;
+  z-index: 999;
+}
+
+.photo-cred {
+  position: absolute;
+  right: 0;
+  font-family: "Shadows Into Light";
+  margin-right: 20px;
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 150px;
+  background-color: #1f2327;
+}
+
+.footer-copyright {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.logo-link {
+  font-family: "Permanent Marker";
+  margin-left: 5px;
+  color: orange;
+}
+
+/* Bootstrap Modal at beggining  */
+#openingModal, #openingModal h5, #openingModal h3, #openingModal p {
+  background-color: #FFF;
+  color: #000;
+}
+
+/* Modal CSS */
+/* The Modal (background) */
+.img-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.img-modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  /* max-height: 900rem; */
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.img-modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.img-close {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.img-close:hover,
+.img-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .img-modal-content {
+    width: 100%;
+  }
+}
