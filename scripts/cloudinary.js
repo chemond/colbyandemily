@@ -12,7 +12,7 @@ const getPhotosByTag = function (tag) {
 const getPhotoByID = function (photoID, format, tag) {
     console.log(`${tag}-row`);
     const imgRow = document.getElementById(`${tag}-row`);
-    fetch(`https://res.cloudinary.com/dhhijcjym/image/upload/${photoID}.${format}`)
+    fetch(`https://res.cloudinary.com/dhhijcjym/image/upload/h_600/${photoID}.${format}`)
         .then(response =>  {
             let img = document.createElement('img')
             img.setAttribute('src', response.url)
@@ -20,19 +20,16 @@ const getPhotoByID = function (photoID, format, tag) {
             img.setAttribute('onClick', 'displayModal(this.id)')
             img.setAttribute('class', 'img-fluid')
             img.setAttribute('alt', photoID)
-            img.setAttribute('loading', 'lazy')
-            img.setAttribute('height', '300')
-            img.setAttribute('width', 'auto')
 
             imgRow.appendChild(img)
         })
 
 }
 
-getPhotosByTag('brideandgroom');
+// getPhotosByTag('brideandgroom');
 getPhotosByTag('details');
-getPhotosByTag('family');
-getPhotosByTag('bridalparty');
-getPhotosByTag('preparation');
-getPhotosByTag('ceremony');
-getPhotosByTag('reception');
+// getPhotosByTag('family');
+// getPhotosByTag('bridalparty');
+// getPhotosByTag('preparation');
+// getPhotosByTag('ceremony');
+// getPhotosByTag('reception');
