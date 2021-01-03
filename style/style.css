@@ -21,6 +21,7 @@ p {
 img {
   height: 100% !important;
   overflow-x: auto;
+  margin: 0 5px;
   /* pointer-events: none; */
 }
 
@@ -50,8 +51,8 @@ img {
   margin-top: 5px;
 }
 
-#top-img-row {
-  margin-top: 20px;
+nav {
+  margin-bottom: 10px;
 }
 
 .imgrow-sm {
@@ -219,8 +220,8 @@ img {
   max-width: 100%;
   height: auto;
   /* max-height: 900rem; */
-  overflow: hidden;
-  pointer-events: none;
+  /* overflow: hidden; */
+  /* pointer-events: none; */
 }
 
 /* Caption of Modal Image */

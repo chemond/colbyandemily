@@ -35,6 +35,7 @@
   <meta property="og:type" content="Website" />
   <meta property="og:description" content="Wedding photos, engagement photos, and travel photos." />
   <meta property="og:image" content="https://colbyandemily.com/twittercard.png" />
+
 </head>
 
 <body>
@@ -48,6 +49,19 @@
 
         <li class="nav-item active">
           <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WEDDING</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#brideandgroom">Bride & Groom</a>
+            <a class="dropdown-item" href="#details">Details</a>
+            <a class="dropdown-item" href="#family">Family</a>
+            <a class="dropdown-item" href="#bridalparty">Bridal Party</a>
+            <a class="dropdown-item" href="#preparation">Preparation</a>
+            <a class="dropdown-item" href="#ceremony">Ceremony</a>
+            <a class="dropdown-item" href="#reception">Reception</a>
+
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#elopement">ELOPEMENT</a>
@@ -71,9 +85,66 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid" oncontextmenu="return false">
+  <div class="container-fluid">
+    <h1 id="brideandgroom" class="photo-cat">Wedding - Bride & Groom</h1>
+    <div id="brideandgroom-row" class="row imgrow imgrow-lg">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 id="details" class="photo-cat">Wedding - Details</h1>
+    <div id="details-row" class="row imgrow imgrow-sm">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 id="family" class="photo-cat">Wedding - Family</h1>
+    <div id="family-row" class="row imgrow imgrow-md">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 id="bridalparty" class="photo-cat">Wedding - Bridal Party</h1>
+    <div id="bridalparty-row" class="row imgrow imgrow-md">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 id="preparation" class="photo-cat">Wedding - Preparation</h1>
+    <div id="preparation-row" class="row imgrow imgrow-sm">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 id="ceremony" class="photo-cat">Wedding - Ceremony</h1>
+    <div id="ceremony-row" class="row imgrow imgrow-lg">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h1 id="reception" class="photo-cat">Wedding - Reception</h1>
+    <div id="reception-row" class="row imgrow imgrow-md">
+      <div class="fade-on-left"></div>
+      <div class="fade-on-right"></div>
+      <p class="photo-cred">Photos by <a href="https://www.lukenorrisphotography.com/">Luke Norris</a></p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
     <h1 id="elopement" class="photo-cat">Elopement Session</h1>
-    <div id="top-img-row" class="row imgrow imgrow-lg">
+    <div id="top-img-row" class="row imgrow imgrow-md">
       <div class="fade-on-left"></div>
       <div class="fade-on-right"></div>
       <p class="photo-cred">Photos by <a href="http://slowjuke.com">Slow Juke</a></p>
@@ -154,9 +225,9 @@
       <img loading="lazy" src="img/elope75-min.jpg" id="elop75" onClick="displayModal(this.id)" class="img-fluid" alt="Elopement75"></img>
     </div>
   </div>
-  <div class="container-fluid" oncontextmenu="return false">
+  <div class="container-fluid">
     <h1 id="engagement" class="photo-cat">Engagement</h1>
-    <div id="top-img-row" class="row imgrow imgrow-md">
+    <div id="top-img-row" class="row imgrow imgrow-sm">
       <div class="fade-on-left"></div>
       <div class="fade-on-right"></div>
       <p class="photo-cred">Photos by <a href="http://slowjuke.com">Slow Juke</a></p>
@@ -182,7 +253,7 @@
     </div>
   </div>
 
-  <div class="container-fluid" oncontextmenu="return false">
+  <div class="container-fluid">
 
     <h1 id="other" class="photo-cat">Other</h1>
     <div class="row imgrow imgrow-sm">
@@ -212,7 +283,7 @@
   <!-- The Modal for images - non Bootstrap -->
   <div id="myModal" class="img-modal">
 
-    <div class="" oncontextmenu="return false">
+    <div class="">
       <span class="img-close">&times;</span>
       <img class="img-modal-content" id="modalImg"> </img>
     </div>
@@ -262,6 +333,7 @@
       let modalImg = document.getElementById("modalImg");
       modal.style.display = "block";
       modalImg.src = img.src;
+      modalImg.style.maxHeight = "600px"
       // captionText.innerHTML = this.alt;
     }
 
@@ -278,9 +350,11 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="scripts/cloudinary.js"></script>
   <script>
     $('#exampleModalCenter').modal('show');
   </script>
+
 </body>
 
 <footer class="page-footer pt-4">
@@ -288,7 +362,7 @@
 
   </div>
   <div class="footer-copyright text-center py-3">
-    <span>© 2020 Copyright</span>
+    <span>© 2021 Copyright</span>
 
     <a class="logo-link" href="https://colbyhemond.me/">
       colbyhemond.me</a>
