@@ -49,6 +49,7 @@ img {
   overflow-x: auto;
   white-space: nowrap;
   margin-top: 5px;
+  max-width: 105%;
 }
 
 nav {
