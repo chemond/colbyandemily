@@ -2,7 +2,6 @@ const getPhotosByTag = function (tag) {
     fetch(`https://res.cloudinary.com/dtn50ayte/image/list/${tag}.json`)
                         .then(response => response.json() )
                         .then(data => {
-                            console.log(data);
                             data.resources.forEach(photo => {
                                 getPhotoByID(photo.public_id, photo.format, tag)
                             }); 
@@ -15,7 +14,6 @@ const getPhotoByID = function (photoID, format, tag) {
     const imgRow = document.getElementById(`${tag}-row`);
     fetch(`https://res.cloudinary.com/dtn50ayte/image/upload/h_600/${photoID}.${format}`)
         .then(response =>  {
-            console.log(response);
             let img = document.createElement('img')
             img.setAttribute('src', response.url)
             img.setAttribute('id', photoID)
