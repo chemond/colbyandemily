@@ -12,7 +12,7 @@ const getPhotosByTag = function (tag) {
 const getPhotoByID = function (photoID, format, tag) {
     console.log(`${tag}-row`);
     const imgRow = document.getElementById(`${tag}-row`);
-    fetch(`https://res.cloudinary.com/dtn50ayte/image/upload/h_600/${photoID}.${format}`)
+    fetch(`https://res.cloudinary.com/dtn50ayte/image/upload/h_600,f_auto/${photoID}.${format}`)
         .then(response =>  {
             let img = document.createElement('img')
             img.setAttribute('src', response.url)
